@@ -31,7 +31,7 @@
 							"raw": "http://192.168.2.97:8383/12Trading/login",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -60,7 +60,7 @@
 							"raw": "http://192.168.2.97:8383/12Trading/addUser",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -91,7 +91,7 @@
 							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/getOrder",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -129,7 +129,7 @@
 							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/getProduct",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -176,7 +176,7 @@
 							"raw": "http://192.168.2.97:8383/zort/syncdatabase/sync",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -222,7 +222,7 @@
 							"raw": "http://192.168.2.97:8383/zort/rest12Tzort/12Trading/getCustomer",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -260,7 +260,7 @@
 							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/addProduct",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -298,7 +298,7 @@
 							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/updateAvailableStock",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -336,7 +336,7 @@
 							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/updateStock12T",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -364,7 +364,7 @@
 							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/addOrder",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -395,7 +395,7 @@
 							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/updateStatus",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -428,7 +428,7 @@
 							"raw": "http://192.168.2.97:8383/M3API/StockManage/fakeStock/getStock",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
@@ -456,7 +456,7 @@
 							"raw": "http://192.168.2.97:8383/M3API/StockManage/Stock/getStock",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"192.168.2.97"
 							],
 							"port": "8383",
 							"path": [
