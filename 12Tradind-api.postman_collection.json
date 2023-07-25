@@ -28,7 +28,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8383/12Trading/login",
+							"raw": "http://192.168.2.97:8383/12Trading/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -57,7 +57,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8383/12Trading/addUser",
+							"raw": "http://192.168.2.97:8383/12Trading/addUser",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -88,7 +88,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/order/OrderManage/getOrder",
+							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/getOrder",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -126,7 +126,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/product/ProductManage/getProduct",
+							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/getProduct",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -173,7 +173,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8383/zort/syncdatabase/sync",
+							"raw": "http://192.168.2.97:8383/zort/syncdatabase/sync",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -219,7 +219,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8383/zort/rest12Tzort/12Trading/getCustomer",
+							"raw": "http://192.168.2.97:8383/zort/rest12Tzort/12Trading/getCustomer",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -257,7 +257,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/product/ProductManage/addProduct",
+							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/addProduct",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -295,7 +295,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/product/ProductManage/updateAvailableStock",
+							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/updateAvailableStock",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -333,7 +333,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/product/ProductManage/updateStock12T",
+							"raw": "http://192.168.2.97:8383/zort/product/ProductManage/updateStock12T",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -361,7 +361,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/zort/order/OrderManage/addOrder",
+							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/addOrder",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -392,7 +392,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8383/zort/order/OrderManage/updateStatus",
+							"raw": "http://192.168.2.97:8383/zort/order/OrderManage/updateStatus",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -425,7 +425,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/M3API/StockManage/fakeStock/getStock",
+							"raw": "http://192.168.2.97:8383/M3API/StockManage/fakeStock/getStock",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -453,7 +453,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8383/M3API/StockManage/Stock/getStock",
+							"raw": "http://192.168.2.97:8383/M3API/StockManage/Stock/getStock",
 							"protocol": "http",
 							"host": [
 								"localhost"
