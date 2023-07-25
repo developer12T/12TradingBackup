@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "b8614b5f-ab69-4fae-bdaa-5efed94651c4",
+		"name": "12Tradind-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28053781",
+		"_collection_link": "https://orange-meteor-194855.postman.co/workspace/Developer12Trading~76c1d3c3-70ea-4326-bb4a-e28422d9dd6d/collection/28053781-b8614b5f-ab69-4fae-bdaa-5efed94651c4?action=share&creator=28053781&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Authen-login-add",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"woraphat.sri\",\r\n    \"password\":\"2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/12Trading/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"12Trading",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usercode\":\"000001\",\r\n    \"username\":\"woraphat.sri\",\r\n    \"password\":\"2020\",\r\n    \"fullname\":\"test user\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"company\":\"12trading\",\r\n    \"department\":\"it\",\r\n    \"status\":\"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/12Trading/addUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"12Trading",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Zort-api",
+			"item": [
+				{
+					"name": "getOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/order/OrderManage/getOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"order",
+								"OrderManage",
+								"getOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/product/ProductManage/getProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"product",
+								"ProductManage",
+								"getProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "syncdatabase",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"dev12T\",\r\n    \"passWord\":\"12Trading\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/zort/syncdatabase/sync",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"syncdatabase",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"createdate\":\"2023-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/zort/rest12Tzort/12Trading/getCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"rest12Tzort",
+								"12Trading",
+								"getCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/product/ProductManage/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"product",
+								"ProductManage",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAvailableStock",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/product/ProductManage/updateAvailableStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"product",
+								"ProductManage",
+								"updateAvailableStock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStock12T",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "IT_12",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/product/ProductManage/updateStock12T",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"product",
+								"ProductManage",
+								"updateStock12T"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addOrder",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI1MzY4MSwiZXhwIjoxNjkwMjYwODgxfQ.bNurkF7gKCuOx6UCufTkk9D3Pb06nunMtT81pU_3gZU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/zort/order/OrderManage/addOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"order",
+								"OrderManage",
+								"addOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStatusPrint",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/zort/order/OrderManage/updateStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"zort",
+								"order",
+								"OrderManage",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "M3API",
+			"item": [
+				{
+					"name": "getFakeStock",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI2MDk5MiwiZXhwIjoxNjkwMjY4MTkyfQ.N2AfCcLVyVFrVs56NDewLWEJqnj6ZC2M7GnXluNzaX4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/M3API/StockManage/fakeStock/getStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"M3API",
+								"StockManage",
+								"fakeStock",
+								"getStock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStock",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndvcmFwaGF0LnNyaSIsImlhdCI6MTY5MDI2MDk5MiwiZXhwIjoxNjkwMjY4MTkyfQ.N2AfCcLVyVFrVs56NDewLWEJqnj6ZC2M7GnXluNzaX4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/M3API/StockManage/Stock/getStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"M3API",
+								"StockManage",
+								"Stock",
+								"getStock"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
